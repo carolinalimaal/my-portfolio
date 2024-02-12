@@ -1,12 +1,12 @@
 :root{
-    --primary-color: rgba(9, 42, 68);
+    --primary-color: rgb(0, 0, 0);
     --container-bg-color: rgba(73, 73, 73, 0.7);
     --teste: rgb(0, 28, 49);
     ;
-    --menu-color: rgba(9, 42, 68, 0.8);
+    --menu-color: rgba(0, 0, 0, 0.8);
     --secundary-color: rgb(219, 81, 31);
     --footer-color: rgb(2, 25, 43);
-    --text-shadows: text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.35);
+    /* rgba(9, 42, 68) */
 }
 
 *{
@@ -39,6 +39,7 @@ section{
     position: fixed;
     z-index: 2;
     width: 100%;
+    height: 50px;
     background-color: var(--menu-color);
     display: flex;
     justify-content: center;
@@ -56,7 +57,7 @@ section{
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    text-shadow: --text-shadows;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
     position: relative;
 }
 
@@ -101,20 +102,21 @@ section{
 
 .description-home h1{
     font-size: 50px;
-    text-shadow: --text-shadows;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
 }
 
 .description-home h1 span{
     color: var(--secundary-color);
+    text-shadow: 2px 2px 2px rgb(219, 81, 31, 0.3);
 }
 
 .description-home p{
     font-size: 18px;
     margin: 10px 0;
-    text-shadow: --text-shadows;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
 }
 
-.description-home a{
+.contact a{
     text-decoration: none;
     margin: 10px;
 }
@@ -134,7 +136,7 @@ section{
     width: 100%;
     margin: 15px 40px;
     font-size: 40px;
-    text-shadow: --text-shadows;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 .container-about-me p{
@@ -144,7 +146,7 @@ section{
     background-color: var(--container-bg-color);
     border-radius: 10px;
     font-size: 18px;
-    text-shadow: --text-shadows;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.35);
     text-align: justify;
 }
 /* ------ SKILLS ------ */
@@ -163,7 +165,7 @@ section{
     width: 100%;
     margin: 15px 40px;
     font-size: 40px;    
-    text-shadow: --text-shadows;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 .grid-skills{
@@ -175,6 +177,7 @@ section{
     justify-items: center;
     grid-gap: 25px;
     width: 850px;
+    margin: 0 20px;
 }
 
 .grid-skills-items{
@@ -201,18 +204,19 @@ section{
     width: 100%;
     margin: 15px 40px;
     font-size: 40px;
-    text-shadow: --text-shadows;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 .grid-projects{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     align-content: center;
     justify-content: space-around;
     align-items: center;
     justify-items: center;
     grid-gap: 25px;
     width: 850px;
+    margin: 0 20px;
 }
 
 .grid-projects-items{
@@ -297,7 +301,6 @@ footer{
     z-index: 1;
     color: var(--primary-color);
     text-decoration: none;
-    transform: rotate(-90deg);
     display: flex;
     align-items: center;
     justify-content: center;   
