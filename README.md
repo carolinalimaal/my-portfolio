@@ -2,7 +2,7 @@
 
 O projeto Portifólio Dev foi feito para implementar minhas habilidades em HTML5 e CSS3 em um projeto prático, além de utilizar como forma de me apresentar para outro profissionais e empresas.
 
-![Logo do Portifólio Dev](./imgs/screenshot-portifolioDev.jpg)
+![Logo do Portifólio Dev](./assets/imgs/screenshot-portifolioDev.jpg)
 
 
 ### 🚀 Status
