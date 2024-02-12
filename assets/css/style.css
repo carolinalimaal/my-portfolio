@@ -5,7 +5,6 @@
     ;
     --menu-color: rgba(0, 0, 0, 0.8);
     --secundary-color: rgb(219, 81, 31);
-    --footer-color: rgb(2, 25, 43);
     /* rgba(9, 42, 68) */
 }
 
@@ -134,7 +133,8 @@ section{
 
 .container-about-me h2{
     width: 100%;
-    margin: 15px 40px;
+    margin: 30px 40px;
+    text-align: center;
     font-size: 40px;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
@@ -163,7 +163,8 @@ section{
 
 .container-skills h2{
     width: 100%;
-    margin: 15px 40px;
+    margin: 30px 40px;
+    text-align: center;
     font-size: 40px;    
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
@@ -202,7 +203,8 @@ section{
 
 .container-projects h2{
     width: 100%;
-    margin: 15px 40px;
+    margin: 30px 40px;
+    text-align: center;
     font-size: 40px;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
@@ -220,64 +222,37 @@ section{
 }
 
 .grid-projects-items{
-    border-radius: 10px;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
+}
+
+.grid-projects-items:hover{
+    transform: scale(1.15);
+    transition: 0.6s;
 }
 
 .grid-projects-items img{
-    text-align: center;
+    opacity: 40%;
     border-radius: 10px;
-    display: block;
+    text-align: center;
 }
 
-.grid-projects-items:hover img{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
 
-.layer{
+.title-project {
     width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--secundary-color));
-    border-radius: 10px;
     position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    top: 15%;
     text-align: center;
-    font-size: 14px;
 }
 
-.layer h3{
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 20px;
+.title-project h3{
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
 }
 
-.layer a{
-    background: white;
-    border-radius: 10px;
-    padding: 5px;
-    margin-top: 30px;
-    color: var(--secundary-color);
-    text-decoration: none;
-    font-weight: 600;
-}
 
-.layer a:hover{
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-}
-
-.grid-projects-items:hover .layer{
-    height: 100%;
-    transition: 0.6s;
-}
 
 /* ------ FOOTER ------ */
 footer{
@@ -364,6 +339,10 @@ footer{
     .grid-skills, .grid-projects{
         grid-template-columns: 1fr;
     }        
+
+    .grid-projects-items img{
+        width: 225px;
+    }
 }
 
 @media (max-width:320px){
